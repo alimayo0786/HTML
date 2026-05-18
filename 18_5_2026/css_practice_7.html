@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#panel, .flip {
+  padding: 10px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+  cursor:pointer;
+}
+
+#panel {
+  display: none;
+}
+h1.hidden {
+  visibility: hidden;
+}
+</style>
+</head>
+<body>
+
+<p class="flip" onclick="myFunction()">Click to show panel</p>
+<h1 class="hidden">this is a heading</h1>
+
+<div id="panel">
+  <p>This panel contains a div element, which is hidden by default (display: none).</p>
+  <p>We use JavaScript to show it (display: block).</p>
+  <p>How it works: When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+  <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("panel").style.display = "block";
+}
+</script>
+
+</body>
+<head>
+<style>
+#panel, .flip {
+  padding: 10px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+  cursor: pointer;  
+}
+
+#panel {
+  display: none;
+  cursor: auto;
+}
+</style>
+</head>
+<body>
+
+<p class="flip" onclick="myFunction()">Click to show/hide panel</p>
+
+<div id="panel">
+  <p>The panel toggles between hiding and showing a div element.</p>
+  <p>W use JavaScript to open and close it.</p>
+  <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("panel");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<head>
+<style>
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid green;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid red;
+}
+</style>
+</head>
+<body>
+
+<h2>Using position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor:</p>
+
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+
+</body>
+<head>
+<style>
+img {
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  width: 1000px;
+  height: 1000px;
+  z-index: -1;
+}
+div {
+  overflow: scroll;
+}
+
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<img src="C:\Users\Novel Tech\Downloads\Gemini_Generated_Image_9q0oxa9q0oxa9q0o.png">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+<div>ya ma apna se kuch likdwjwdbcjf kcddkjjo ck  kcsacskhsvd msd jno iojjdsvs v kjkxio</div>
+
+</body>
+
+</html>
+
+
+
