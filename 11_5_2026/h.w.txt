@@ -1,0 +1,7 @@
+Find the sum of first N numbers.
+
+
+Check whether a number is palindrome.
+Check whether a number is Armstrong.
+
+Find all prime numbers between 1 and N.
