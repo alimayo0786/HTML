@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> International Quran Insitution</title>
+	</head>
+	<style>
+		.flex1{
+			display: flex;
+		}
+		body{
+			background-color: #ffffff;
+			font-family: Inter, Poppins, sans-serif;
+		}
+		.flex {
+			display: flex;
+			background-color: white;
+			justify-content: space-between;
+			}
+		.padding{
+			padding: 20px;
+			margin-top: 40px;
+			font-size: 14px;
+			font-weight: bold;	
+			}
+		.padding:hover{
+			color: blue;
+			text-decoration-line: underline;
+		}
+		
+		.image{
+			margin-left: 40px;
+			height: auto;
+			width: 105px;
+		}
+		.padding1{
+			border: 1px solid #2E5AFF;
+			margin-top: 22px;
+			margin-right: 50px;
+			font-weight: bold;
+			height: 30px;
+			width: 180px;
+			padding-left: 30px;
+			padding-top: 16px;
+			border-radius: 30px;
+			background-color: black;
+			color: white;
+		}
+		.margin1{
+			margin-top: 125px;
+			font-weight: bold;
+			font-size: 60px;
+			margin-left: 270px;
+			color: white;
+		}
+		.margin{
+			margin-left: 270px;
+			font-weight: bold;
+			margin-top: 30px;
+			font-size: 21px;
+			color: white;
+		}
+		.box{
+			display: flex;
+			margin-left: 270px;
+			margin-top: 30px;
+			border: 1px solid #2e5bff;
+			height: 30px;
+			width: 199px;
+			padding-left: 40px;
+			padding-top: 12px;
+			border-radius: 35px;
+			background-color: #2e5bff;
+			color: white;
+			font-weight: bold;
+		}
+		.box1{
+			display: flex;
+			margin-left: 30px;
+			margin-top: 30px;
+			border: 0.5px solid whitesmoke;
+			height: 30px;
+			width: 199px;
+			padding-left: 40px;
+			padding-top: 12px;
+			border-radius: 35px;
+			color: white;
+			font-weight: bold;
+		}
+		.box1:hover{
+			background-color: white;
+			color: black;
+			border-color: white;
+		}
+		.bg_pic{
+			background: linear-gradient(135deg, rgba(11, 28, 61, 0.95) 0%, rgba(11, 28, 61, 0.7) 50%, rgba(11, 28, 61, 0.4) 100%),url('../images/h11.png');
+			background-size: 100%;
+			height: 600px;
+			background-repeat: no-repeat;
+			border: 1px solid #2E5AFF;
+			background-attachment: fixed;
+			}
+		.heading{
+			margin-top: 50px;
+			font-weight: 800;
+			font-size: 42px;
+			text-align: center;
+			width: 100%;
+			margin-bottom: 50px;
+		}
+		.heading1{
+			margin-top: 50px;
+			font-weight: 600;
+			font-size: 42px;
+			text-align: center;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.para{
+			text-align: center;
+			font-size: 17px;
+			line-height: 1.9;
+			margin-bottom: 25px;
+			opacity: 0.8;
+		}
+		.para1{
+			text-align: center;
+			font-size: 17px;
+			line-height: 1.9;
+			opacity: 0.8;
+			margin-bottom: 25px	;
+		}
+		.para2{
+			text-align: center;
+			font-size: 17px;
+			line-height: 1.9;
+			opacity: 0.8;
+			margin-bottom: 25px	;
+		}
+		.para3{
+			text-align: center;
+			font-size: 17px;
+			line-height: 1.9;
+			opacity: 0.8;
+			margin-bottom: 25px	;
+		}
+		.para4{
+			text-align: center;
+			font-size: 18px;
+			line-height: 1.8;
+			max-width: 700px;
+			margin: 0 auto 50px;
+			opacity: 0.8;
+			margin-bottom: 25px	;
+		}
+		.image1{
+			height: auto;
+			width: 100%;
+			/*object-fit: contain;*/
+			justify-content: flex-start;
+			display: block;
+			border-radius: 15px;
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+		}
+		.border{
+			box-sizing: border-box;
+			background-color: white;
+			height: 440px;
+			width: 350px;
+			border-radius: 15px	;
+			border: 1px solid gray;
+			margin: 40px;
+		}
+		.flex5{
+			display: flex;
+		}
+		.course_heading{
+			color: #4FA3FF;
+			margin-left: 30px;
+			word-spacing: 3px;
+		}
+		.course_para{
+			font-size: 14px;
+			line-height: 1.7;
+			opacity: 0.7;
+			margin-left: 30px;
+			margin-right: 10px;
+		}
+		.flex6{
+			display: flex;
+		}
+		.box2{
+			margin-left: 20px;
+			margin-top: 20px;
+			border: 1px solid #2e5bff;
+			box-sizing: border-box;
+			height: 40px;
+			width: 110px;
+			padding-left: 20px;
+			padding-top: 12px;
+			border-radius: 50px;
+			font-size: 12px;
+			font-weight: 600;
+			background-color: #0B1C3D;
+			color: white;
+		}
+		.box3{
+			margin-left: 20px;
+			margin-top: 20px;
+			border: 2px solid #2e5bff;
+			box-sizing: border-box;
+			height: 40px;
+			width: 140px;
+			padding-left: 20px;
+			padding-top: 12px;
+			border-radius: 50px;
+			font-size: 12px;
+			font-weight: 600;
+			}
+			.box3:hover{
+				background-color: #2e5bff;
+				color: white;
+			}
+			.border1{
+				box-sizing: border-box;
+				width: 390px;
+				height: 195px;
+				border: 1px solid gray;
+				border-radius: 15px;
+				margin: 40px;
+				margin-bottom: 4px;
+			}
+			.border2{
+				box-sizing: border-box;
+				width: 250px;
+				height: 50px;
+				border-radius:50px;
+				font-weight: 600;
+				border:1px solid #2e5bff ;
+				margin-left: 40px;
+				margin-top: 10px;
+				color: white;
+				background-color: #0B1C3D;
+			}
+			.border3{
+				box-sizing: border-box;
+				width: 320px;
+				height: 50px;
+				border-radius:50px;
+				font-weight: 600;
+				border:1px solid #2e5bff ;
+				margin-left: 40px;
+				margin-top: 10px;
+				color: white;
+				background-color: #0B1C3D;
+			}
+			.image4{
+				width: 20px;
+				height: 20px;
+				margin-top: 14px;
+				margin-left: 27px;
+			}
+			.button_para{
+				margin-left: 20px;
+			}
+			.image2{
+				height: 50px;
+				width: 50px;
+				border-radius: 50%;
+				margin-left: 30px;
+				margin-top: 30px;
+			}
+			.image3{
+				height: 23px;
+				width: 23px;				
+				margin-left: 90px;
+				margin-top: 35px;
+			}
+			.course_heading1{
+				color: #4FA3FF;
+				word-spacing: 3px;
+				margin-top: 35px;
+				margin-left: 20px;
+				font-size: 17px;
+			}
+			.course_para1{
+				text-align: center;
+				font-size: 18px;
+				opacity: 0.6;
+				margin-top: 30px;
+			}
+			.border4{
+				box-sizing: border-box;
+				width: 130px;
+				height: 50px;
+				border-radius:50px;
+				font-weight: 600;
+				border:1px solid #2e5bff ;
+				margin-left: 15px;
+				text-align: center;
+				margin-top: 10px;
+				color: white;
+				background-color: blue;
+			}
+			.border5{
+				box-sizing: border-box;
+				width: 130px;
+				height: 50px;
+				border-radius:50px;
+				font-weight: 600;
+				border:2px solid blue ;
+				margin-left: 15px;
+				margin-top: 10px;
+				color: blue;
+			}
+			.border5:hover{
+				color: white;
+				background-color: blue;
+			}
+			.border6{
+				box-sizing: border-box;
+				width: 130px;
+				height: 50px;
+				border-radius:50px;
+				font-weight: 600;
+				border:2px solid blue ;
+				margin-left: 15px;
+				margin-top: 10px;
+				color: blue;
+			}
+			.border6:hover{
+				color: white;
+				background-color: blue;
+			}
+			.button_para1{
+				margin-top: 15px;
+				text-align: center;
+			}
+			.flex7{
+				display: flex;
+				justify-content: center;
+			}
+			.course_table{
+				width: 1240px;
+				font-size: 17px;
+				opacity: 0.8;
+				line-height: 3;
+			}
+			.table{
+				text-align: center;
+				border: 1px solid blue;
+				margin-left: 50px;
+				width:1240px ;
+				margin-top: 50px;
+				border-radius: 15px;
+			}
+	</style>
+	<body>
+		<div class="flex">
+			<div  >
+				<img class="image" src="C:\Users\Novel Tech\Downloads\h0.png"  >
+			</div>
+			<div class="flex">
+				<div class="padding">
+					HOME
+				</div>
+				<div class="padding">
+					ABOUT
+				</div>
+				<div class="padding">	
+					COURSES
+				</div>
+				<div class="padding">
+					TEACHER
+				</div>
+				<div class="padding">	
+					CONTANT
+				</div>
+			</div>
+			
+			<div class="padding1">BOOK FREE TRAIL</div>
+			
+		</div>
+		<div class="bg_pic">
+			<div class="margin1">
+				International Quran Institute<br>Learn the Quran Anywhere,<br>Anytime
+			</div>
+			<div class="margin">Join International Quran Institute to learn Quran online with expert<br>tutors. Get Islamic education from the comfort of your home.
+			</div>
+			<div class="flex1">
+				<div class="box">BOOK FREE TRAIL</div>
+				<div class="box1">BROWSE COURSES</div>
+			</div>
+		</div>
+
+		<h1 class="heading">
+			Why Choose International Quran Institute?
+		</h1>
+		<p class="para">
+			Welcome to International Quran Institute, a dedicated platform where you can access complete Quranic and Islamic education under one roof. We have <br> made learning the Quran easy, accessible, and effective through modern online teaching methods. By using advanced technology such as high-speed <br> internet, Zoom, Skype, and interactive digital whiteboards, we offer live one-to-one online Quran classes that you can attend from anywhere in the world, <br> at any time that suits you.
+		</p>
+		<p class="para1">
+			International Quran Institute is more than just a traditional religious setup—we are a global online Quran learning center committed to spreading authentic <br> Islamic knowledge. Our mission is to help Muslims of all ages learn how to read the Quran correctly and understand its true message, regardless of <br> location or busy schedules.
+		</p>
+		<p class="para2">
+			Reciting the Quran is important, but understanding its meaning is equally essential. The Quran was revealed as guidance for humanity, and learning it <br> helps us understand the purpose of life and the path that leads to success. Allah emphasizes the importance of seeking knowledge for both men and <br> women. However, in today’s fast-paced lifestyle, finding time for Islamic education can be difficult. Additionally, many countries—especially in the UK, <br> Australia, Europe, and other regions—have limited access to Islamic institutions and mosques.
+		</p>
+		<p class="para3">
+			To bridge this gap, International Quran Institute brings Quran education directly to your home. Through our online classes, you and your children can <br> learn the Quran with qualified teachers from anywhere in the world, in a comfortable and flexible learning environment.
+		</p>
+		<h1 class="heading">
+			Our Comprehensive Quran Courses
+		</h1>
+		<p class="para4">
+			Choose from our wide range of Islamic education courses designed for all age groups and skill levels
+		</p>
+			<div class="flex5" >
+				<div class="border">
+					<img class="image1" src="../images\h12.png">
+					<h3 class="course_heading">
+						Quran Reading Course
+					</h3>
+					<p class="course_para">
+						International Quran Academy is a well-known online Quran academy. Our course on "Quran with Tajweed" focuses on the primary goal...
+					</p>
+					<div class="flex6">
+						<div class="box2">
+							FREE TRAIL
+						</div>
+						<div class="box3">
+							VIEW COURSES
+						</div>
+					</div>
+				</div>
+				<div class="border">
+					<img class="image1" src="../images\h13.png">
+					<h3 class="course_heading">
+						Online Tajweed Course
+					</h3>
+					<p class="course_para">
+						Qirat has been present since the revelation of the Holy Quran. Our Ten Qirat Course is an advanced level program. Students first master...
+					</p>
+					<div class="flex6">
+						<div class="box2">
+							FREE TRAIL
+						</div>
+						<div class="box3">
+							VIEW COURSES
+						</div>
+					</div>
+				</div>
+				<div class="border">
+					<img class="image1" src="../images\h14.png">
+					<h3 class="course_heading">
+						Quran Memorization Course
+					</h3>
+					<p class="course_para">
+						Tafseer comes from the Arabic word 'Fasr', which means to explain something clearly. Through our Tafseer course, you will understand Quranic...
+					</p>
+					<div class="flex6">
+						<div class="box2">
+							FREE TRAIL
+						</div>
+						<div class="box3">
+							VIEW COURSES
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex5" >
+				<div class="border">
+					<img class="image1" src="../images\h12.png">
+					<h3 class="course_heading">
+						Quran Ijazah Course
+					</h3>
+					<p class="course_para">
+						International Quran Academy is a respected online Quran school. We prepared this course for those who are unfamiliar with Quranic reading...
+					</p>
+					<div class="flex6">
+						<div class="box2">
+							FREE TRAIL
+						</div>
+						<div class="box3">
+							VIEW COURSES
+						</div>
+					</div>
+				</div>
+				<div class="border">
+					<img class="image1" src="../images\h13.png">
+					<h3 class="course_heading">
+						Ten Qiraat Course
+					</h3>
+					<p class="course_para">
+						Online Quran Academy has proud to offer Tajweed course. It guides you proper Quranic pronunciation and recitation. It is suitable for...
+					</p>
+					<div class="flex6">
+						<div class="box2">
+							FREE TRAIL
+						</div>
+						<div class="box3">
+							VIEW COURSES
+						</div>
+					</div>
+				</div>
+				<div class="border">
+					<img class="image1" src="../images\h14.png">
+					<h3 class="course_heading">
+						Online Tafseer Course
+					</h3>
+					<p class="course_para">
+						Memorizing the Quran is a great blessing. On the Day of Judgment, parents of a Hafiz-e-Quran will wear a crown that shines brighter than the sun...
+					</p>
+					<div class="flex6">
+						<div class="box2">
+							FREE TRAIL
+						</div>
+						<div class="box3">
+							VIEW COURSES
+						</div>
+					</div>
+				</div>
+			</div>
+		<h1 class="heading">
+			Student Review
+		</h1>
+		<div class="flex5">
+			<div class="border1">
+				<div class="flex5">
+					<img class="image2" src="../images\h18.png">
+					<h3 class="course_heading1">
+						Abdullah Khan 
+					</h3>
+					<img class="image3" src="../images\h23.png">
+				</div>
+				<p class="course_para">
+					International Quran Academy is a well-known online Quran academy. Our course on "Quran with Tajweed" focuses on the primary goal...
+				</p>
+			</div>
+			<div class="border1">
+				<div class="flex5">
+					<img class="image2" src="../images\h19.png">
+					<h3 class="course_heading1">
+						Sara Khan
+					</h3>
+					<img class="image3" src="../images\h23.png">
+				</div>
+				<p class="course_para">
+					International Quran Academy is a well-known online Quran academy. Our course on "Quran with Tajweed" focuses on the primary goal...
+				</p>
+			</div>
+			<div class="border1">
+				<div class="flex5">
+					<img class="image2" src="../images\h18.png">
+					<h3 class="course_heading1">
+						Usaman Ali
+					</h3>
+					<img class="image3" src="../images\h23.png">
+				</div>
+				<p class="course_para">
+					International Quran Academy is a well-known online Quran academy. Our course on "Quran with Tajweed" focuses on the primary goal...
+				</p>
+			</div>
+		</div>
+		<div class="flex5">
+			<div class="border1">
+				<div class="flex5">
+					<img class="image2" src="../images\h20.png">
+					<h3 class="course_heading1">
+						Fatima khan
+					</h3>
+					<img class="image3" src="../images\h23.png">
+				</div>
+				<p class="course_para">
+					International Quran Academy is a well-known online Quran academy. Our course on "Quran with Tajweed" focuses on the primary goal...
+				</p>
+			</div>
+			<div class="border1">
+				<div class="flex5">
+					<img class="image2" src="../images\h21.png">
+					<h3 class="course_heading1">
+						Saad Ali
+					</h3>
+					<img class="image3" src="../images\h23.png">
+				</div>
+				<p class="course_para">
+					International Quran Academy is a well-known online Quran academy. Our course on "Quran with Tajweed" focuses on the primary goal...
+				</p>
+			</div>
+			<div class="border1">
+				<div class="flex5">
+					<img class="image2" src="../images\h22.png">
+					<h3 class="course_heading1">
+						Zainab Malik
+					</h3>
+					<img class="image3" src="../images\h23.png">
+				</div>
+				<p class="course_para">
+					International Quran Academy is a well-known online Quran academy. Our course on "Quran with Tajweed" focuses on the primary goal...
+				</p>
+			</div>
+		</div>
+		<div class="flex5">
+			<div class="flex5 border2">
+				<img class="image4" src="../images\h23.png">
+				<p class="button_para">
+					VIEW USA REVIEWS
+				</p>
+			</div>
+			<div class="flex5 border2">
+				<img class="image4" src="../images\h23.png">
+				<p class="button_para">
+					VIEW UK REVIEWS
+				</p>
+			</div>
+			<div class="flex5 border3">
+				<img class="image4" src="../images\h23.png">
+				<p class="button_para">
+					VIEW ISLAMABAD REVIEWS
+				</p>
+			</div>
+			<div class="flex5 border3">
+				<img class="image4" src="../images\h23.png">
+				<p class="button_para">
+					VIEW AUSTRALIA REVIEWS
+				</p>
+			</div>
+		</div>
+		<h1 class="heading1">
+			Our Fee Structure
+		</h1>
+		<p class="course_para1">
+			Affordable and flexible pricing plans for everyone
+		</p>
+		<div class="flex7">
+			<div class="border4">
+				<p class="button_para1">
+					Fee USD
+				</p>
+			</div>
+			<div class="border5">
+				<p class="button_para1">
+					Fee PKR
+				</p>
+			</div>
+			<div class="border6">
+				<p class="button_para1">
+					Fee GBP
+				</p>
+			</div>
+		</div>
+		<div class="table">
+			<table class="course_table">
+				<tr style="background: rgba(46, 91, 255, 0.1)">
+					<th>SCHEDULE/WEEK</th>
+					<th>CLASSES PER MONTH</th>
+					<th>FEE USD</th>
+				</tr>
+				<tr>
+					<td>2Classes/Weeks</td>
+					<td>08 /Month</td>
+					<td>$30 Monthly</td>
+				</tr>
+				<tr>
+					<td>3Classes/Weeks</td>
+					<td>12 /Month</td>
+					<td>$40 Monthly</td>
+				</tr>
+				<tr>
+					<td>4Classes/Weeks</td>
+					<td>16 /Month</td>
+					<td>$50 Monthly</td>
+				</tr>
+				<tr>
+					<td>5Classes/Weeks</td>
+					<td>20 /Month</td>
+					<td>$60 Monthly</td>
+				</tr>
+			</table>
+		</div>
+		<h1 class="heading1">
+			Meet Our Expert Quran Teachers
+		</h1>
+		<p class="course_para1">
+			We have many Quran teachers ready to help you learn. Our teachers are kind and <br>	 smart. They know a lot about the Quran.
+		</p>
+		<div class="flex5" >
+				<div class="border">
+					<img class="image1" src="../images\h24.png">
+					<h3 class="course_heading">
+						Ahmed Ehsan
+					</h3>
+					<p class="course_para">
+						Professional Teacher
+					</p>
+					<div class="flex6">
+						<div class="box2">
+							BOOK TRAIL
+						</div>
+					</div>
+				</div>
+				<div class="border">
+					<img class="image1" src="../images\h25.png">
+					<h3 class="course_heading">
+						Abdul Majid
+					</h3>
+					<p class="course_para">
+						Professional Teacher
+					</p>
+					<div class="flex6">
+						<div class="box2">
+							BOOK TRAIL
+						</div>
+					</div>
+				</div>
+				<div class="border">
+					<img class="image1" src="../images\h26.png">
+					<h3 class="course_heading">
+						Abdur Rehman
+					</h3>
+					<p class="course_para">
+						Professional Teacher
+					</p>
+					<div class="flex6">
+						<div class="box2">
+							BOOK TRAIL
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

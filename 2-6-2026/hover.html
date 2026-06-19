@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>hover</title>
+	<style>
+		.navbar{
+			border: 2px solid gray
+		}
+		.inline{
+			display: inline;
+			font-weight: bold;
+			border-right: 0.5px solid black;
+			padding-right: 7px;
+			font-size: 17px;
+		}
+		.line{
+			display: inline;
+			font-weight: bold;
+			border-right: 0.5px solid black;
+			padding-left: 7px;
+			padding-right: 7px;
+			font-size: 17px;
+		}
+		.line1{
+			display: inline;
+			font-weight: bold;
+			border-right: 0.5px solid black;
+			padding-left: 7px;
+			padding-right: 7px;
+			font-size: 17px;
+		}
+		.line2{
+			display: inline;
+			font-weight: bold;
+			border-right: 0.5px solid black;
+			padding-left: 7px;
+			padding-right: 7px;
+			font-size: 17px;
+		}
+		.icon{
+			font-size: 10px;
+		}
+		#home_btn:hover  .home_menu{
+			display: block;
+
+		}
+		.home_menu{
+			display: none;
+		    position: absolute;
+		    left: 10px;
+		    border: 2px solid lightgray;
+		    padding: 5px;
+		    background-color: yellow;
+
+		}
+
+		.navbar{
+			background-color: red;
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="navbar">
+		<ul>
+			<li id="home_btn" class="inline" >home<i class='fas fa-angle-down icon'></i>
+
+				<ul class="home_menu">
+					<li>home 1</li>
+					<li>home 2</li>
+					<li>home 3</li>
+				</ul>
+
+			</li>
+			
+			<li class="line">About us</li>
+			<li class="line1">Our Mission</li>
+			<li class="line2">Contact Us</li>
+		</ul>
+	</div>
+</body>
+</html>

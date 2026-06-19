@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Notes</title>
+	</head>
+	<style>
+		.index{
+			z-index: -1;
+			opacity: 0.3;
+		}
+		p {
+		  background-color: lightblue;
+		  padding: 10px;
+		}
+
+		span {
+		  background-color: red;
+		  color: white;
+		  padding: 10px;
+		}
+		p.dotted {border-style: dotted;}
+		p.dashed {border-style: dashed;}
+		p.solid {border-style: solid;}
+		p.double {border-style: double;}
+		p.groove {border-style: groove;}
+		p.ridge {border-style: ridge;}
+		p.inset {border-style: inset;}
+		p.outset {border-style: outset;}
+		p.none {border-style: none;}
+		p.hidden {border-style: hidden;}
+		p.mix {border-style: dotted dashed solid double;}
+
+		p.ex1 {display: none;}
+		p.ex2 {display: inline;}
+		p.ex3 {display: block;}
+		p.ex4 {display: inline-block;}
+		p.ex5 {display: flex;}
+		p.ex6 {display: grid;}
+	</style>
+	<body>
+		<form>
+		  <label >First name:</label><br>
+		  <input type="text" ><br>
+		  <label >Last name:</label><br>
+		  <input type="text" >
+		</form>
+		<form>
+		  <label >Username:</label><br>
+		  <input type="text" ><br>
+		  <label >Password:</label><br>
+		  <input type="password">
+		</form>
+		<form >
+		  <label >First name:</label><br>
+		  <input type="text"  value="John"><br>
+		  <label >Last name:</label><br>
+		  <input type="text"  value="Doe"><br><br>
+		  <input type="submit" value="Submit">
+		</form>
+		<form >
+		  <label >First name:</label><br>
+		  <input type="text"  value="John"><br>
+		  <label >Last name:</label><br>
+		  <input type="text"  value="Doe"><br><br>
+		  <input type="submit" value="Submit">
+		  <input type="reset" value="Reset">
+		</form>
+		<form>
+		  <input type="radio"  value="HTML">
+		  <label >HTML</label><br>
+		  <input type="radio"  value="CSS">
+		  <label >CSS</label><br>
+		  <input type="radio"  value="JavaScript">
+		  <label>JavaScript</label>
+		</form>
+		<form>
+		  <input type="checkbox"  value="Bike">
+		  <label > I have a bike</label><br>
+		  <input type="checkbox"  value="Car">
+		  <label > I have a car</label><br>
+		  <input type="checkbox"  value="Boat">
+		  <label > I have a boat</label>
+		</form>
+
+		<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+		<form>
+		  <label >Select your favorite color:</label>
+		  <input type="color" >
+		</form>
+		<form>
+		  <label >Birthday:</label>
+		  <input type="date" >
+		</form>
+		<form>
+		  <label >Enter a date before 1980-01-01:</label>
+		  <input type="date"  max="1979-12-31"><br><br>
+		  <label >Enter a date after 2000-01-01:</label>
+		  <input type="date"  min="2000-01-02">
+		</form>
+		<form>
+		  <label >Birthday (date and time):</label>
+		  <input type="datetime-local">
+		</form>
+		<form>
+		  <label >Enter your email:</label>
+		  <input type="email">
+		</form>
+		<form>
+			<input type="image" src="C:\Users\Novel Tech\Desktop\HTML\images\1.jfif" alt="Submit" width="48" height="48">
+		</form>
+		<form>
+		  <label >Select a file:</label>
+		  <input type="file">
+		</form>
+		<form>
+		  <label >First name:</label>
+		  <input type="text" ><br><br>
+		  <input type="hidden"  value="3487">
+		  <input type="submit" value="Submit">
+		</form>
+		<form>
+		  <label >Birthday (month and year):</label>
+		  <input type="month">
+		</form>
+		<form>
+		  <label >Quantity (between 1 and 5):</label>
+		  <input type="number"  min="1" max="5">
+		</form>
+		<form>
+		  <label >Quantity:</label>
+		  <input type="number"  min="0" max="100" step="10" value="30">
+		</form>
+		<form>
+		  <label >Volume (between 0 and 50):</label>
+		  <input type="range"  min="0" max="50">
+		</form>
+		<form>
+		  <label for="gsearch">Search Google:</label>
+		  <input type="search" id="gsearch" name="gsearch">
+		</form>
+		<form>
+		  <label >Enter your phone number:</label>
+		  <input type="tel"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+		</form>
+		<form>
+		  <label f>Select a time:</label>
+		  <input type="time" >
+		</form>
+		<form>
+		  <label >Add your homepage:</label>
+		  <input type="url" >
+		</form>
+		<form>
+		  <label >Select a week:</label>
+		  <input type="week" >
+		</form>
+              <br>
+              <br>
+              <br>
+
+		<p class="dotted">A dotted border.</p>
+		<p class="dashed">A dashed border.</p>
+		<p class="solid">A solid border.</p>
+		<p class="double">A double border.</p>
+		<p class="groove">A groove border.</p>
+		<p class="ridge">A ridge border.</p>
+		<p class="inset">An inset border.</p>
+		<p class="outset">An outset border.</p>
+		<p class="none">No border.</p>
+		<p class="hidden">A hidden border.</p>
+		<p class="mix">A mixed border.</p>
+			
+		<p class="ex1">
+		  <span>Text 1</span>
+		  <span>Text 2</span>
+		  <span>Text 3</span>
+		</p>
+
+		<h2>display: inline:</h2>
+		<p class="ex2">
+		  <span>Text 1</span>
+		  <span>Text 2</span>
+		  <span>Text 3</span>
+		</p>
+
+		<h2>display: block:</h2>
+		<p class="ex3">
+		  <span>Text 1</span>
+		  <span>Text 2</span>
+		  <span>Text 3</span>
+		</p>
+
+		<h2>display: inline-block:</h2>
+		<p class="ex4">
+		  <span>Text 1</span>
+		  <span>Text 2</span>
+		  <span>Text 3</span>
+		</p>
+
+		<h2>display: flex:</h2>
+		<p class="ex5">
+		  <span>Text 1</span>
+		  <span>Text 2</span>
+		  <span>Text 3</span>
+		</p>
+
+		<h2>display: grid:</h2>
+		<p class="ex6">
+		  <span>Text 1</span>
+		  <span>Text 2</span>
+		  <span>Text 3</span>
+		</p>
+			
+           
+
+          	<img class="index" src="C:\Users\Novel Tech\Desktop\HTML\images\1.jfif" height="400px" width="400px">          	<h1>This is a heading</h1>
+
+         
+	</body>
+</html>
