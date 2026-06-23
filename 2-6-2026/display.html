@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>display practices</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		/*.inline{
+			display: inline-block;
+			width: 100px;
+			background-color: yellow;
+			height: 100px;
+			margin: 30px;
+		}*/
+		.grid{
+			display: grid;
+			grid-template-areas:
+			 "Header Header"
+			 "Sidebar Content"
+			 "Footer Footer";
+			grid-template-columns: 1fr 3fr;
+			grid-template-rows: 120px 500px 60px;
+			/*grid-gap: 3px;*/
+			background-color: blue;
+		}
+		.Header{
+			grid-area: Header;
+			text-align: center;
+			margin-top: 40px;
+			background-color: yellow;
+		}
+		.Sidebar{
+			grid-area: Sidebar;
+			text-align: center;
+			margin-top: 40px;
+		}
+		.Content{
+			grid-area: Content;
+			text-align: center;
+			margin-top: 40px;
+		}
+		.Footer{
+			grid-area: Footer;
+			text-align: center;
+			margin-top: 40px;
+		}
+		
+	</style>
+</head>
+<body>
+<!-- 
+	<div>
+		<div class="inline">Text</div>
+		<div class="inline">Text</div>
+		<div class="inline">Text</div>
+	</div> -->
+	<div class="grid">
+		<div class="Header">Headerrrrr</div>
+		<div class="Sidebar">Sidebar</div>
+		<div class="Content">Content</div>
+		<div class="Footer">Footer</div>
+	</div>
+
+	<i class="fa fa-car"></i>
+
+</body>
+</html>
