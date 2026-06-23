@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<style>
+		.label1{
+			margin-left: 50px;
+			font-size: 15px;
+			font-weight: bold;
+			display: block;
+		}
+		.input_type{
+			margin-left: 60px;
+			height: 40px;
+			width: 400px;
+			border-radius: 9px;
+			font-size: 15px;
+			box-sizing: border-box;
+			margin-top: 17px;
+			padding-left: 20px;
+			border: 1px solid #ddd;
+			margin-bottom: 30px;
+		}
+		.input_type1{
+			margin-left: 60px;
+			height: 80px;
+			width: 400px;
+			border-radius: 9px;
+			font-size: 15px;
+			box-sizing: border-box;
+			margin-top: 17px;
+			padding-left: 20px;
+			border: 1px solid #ddd;
+		}
+		.select{
+			margin-left: 60px;
+			height: 40px;
+			width: 400px;
+			border-radius: 9px;
+			font-size: 15px;
+			box-sizing: border-box;
+			margin-top: 17px;
+			padding-left: 20px;
+			border: 1px solid #ddd;
+			margin-bottom: 30px;
+			opacity: 0.6;
+		}
+		input:focus {
+		  outline: none;
+		  border-color: #007bff; 
+		}
+		.form_button{
+			margin-left: 360px;
+			font-size: 15px;
+		}
+	</style>
+	<body>
+		<form>
+			<label class="label1">Name</label>
+			<input type="text" class="input_type" placeholder="Enter your full name">
+		</form>
+		<form>
+			<label class="label1">Father Name</label>
+			<input type="text" class="input_type" placeholder="Enter your father name">
+		</form>
+		<form>
+			<label class="label1">Email Address</label>
+			<input type="email" class="input_type" placeholder="Enter your email">
+		</form>
+		<form>
+			<label class="label1">Gender</label>
+			<select class="select">
+				<option >Select your Gender</option>
+				<option >Male</option>
+				<option >Female</option>
+				<option >Others</option>
+			</select>
+		</form>
+		<form>
+			<label class="label1">City</label>
+			<select class="select">
+				<option >Select City</option>
+				<option >Lahore</option>
+				<option >Kasur</option>
+				<option >Kot Radha Kishen</option>
+				<option >Karachi</option>
+				<option >Islamabad</option>
+				<option >Peshawar</option>
+				<option >Hydrabad</option>
+				<option >Rawiand</option>
+			</select>
+		</form>
+		<form>
+			<label class="label1">Choose Course</label>
+            <select class="select">
+                <option>Select a Course</option>
+                <option>Computer Science</option>
+                <option>CSS</option>
+                <option>HTML</option>
+                <option>C++</option>
+                <option>AI</option>
+                <option>Phyton</option>
+                <option>Javascript</option>
+                <option>Software engerining</option>
+                <option>Software Tester</option>
+                <option>Others</option>
+            </select>
+		</form>
+		<form>
+			<label class="label1">Password</label>
+			<input type="password" class="input_type" placeholder="Enter your password">
+		</form>
+		<form>
+			<label class="label1">Confirm Password</label>
+			<input type="password" class="input_type" placeholder="Enter your confirm password">
+		</form>
+		<button class="form_button">Submit</button>
+	</body>
+</html>
